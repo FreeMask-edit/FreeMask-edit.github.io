@@ -2,6 +2,12 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.video-full-width {
+  max-width: 100%; /* 最大宽度为100% */
+  width: 100%; /* 宽度为100% */
+  height: auto; /* 自动调整高度 */
+}
+
 .hero-body-img{
   text-align: center;
 }
@@ -255,8 +261,7 @@ a:hover:after{
 }
 .marquee-inner{
   display: block;
-  width: 400%;
-  height: 600px;
+  width: 200%;
   position: absolute;
 }
 .marquee-inner p{
@@ -327,6 +332,7 @@ a:hover:after{
   width: 600px;
   height: 230px;
 }
+
 
 
 .s-larger d{
