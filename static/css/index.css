@@ -341,9 +341,7 @@ a:hover:after{
 
 
 .marquee-item-long {
-  /* display: flex; */
-  justify-content: center; /* 水平居中 */
-  align-items: center; /* 垂直居中 */
+  display: inline-block;
   width: 1600px;
   height: 250px;
   margin: 0 10px;     /* 上下外边距为0，左右外边距为10像素 */
