@@ -331,3 +331,24 @@ a:hover:after{
 .s-larger d{
   font-size: 16px;
 }
+
+
+.hero-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marquee-item {
+  width: 100%;
+  text-align: center;
+}
+
+.video-container {
+  display: inline-block;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
