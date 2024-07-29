@@ -329,7 +329,7 @@ a:hover:after{
 
 .s-larger-5 {
   width: 1200px; /* 宽度为100% */
-  height: auto; /* 自动调整高度 */
+  height: 400px; /* 自动调整高度 */
 }
 
 .s-larger d{
