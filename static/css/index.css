@@ -343,11 +343,10 @@ a:hover:after{
 .marquee-item-long {
   display: inline-block;
   width: 1300px;
-  height: 160px;
+  height: 700x;
   margin: 0 10px;     /* 上下外边距为0，左右外边距为10像素 */
   float: left;        /* 元素向左浮动，允许其他元素环绕它 */
   transition: all .3s ease-out; /* 过渡效果：所有属性的变化将在0.3秒内完成，采用ease-out缓动函数 */
   background:#ececec; /* 背景颜色为浅灰色 (#ececec) */
-  border-bottom: orange 5px solid; /* 底部边框为5像素宽的橙色实线 */
   margin-top: 10px;   /* 顶部外边距为10像素 */
 }
