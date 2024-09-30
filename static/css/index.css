@@ -246,10 +246,10 @@ a:hover:after{
 }
 .marquee-inner span{
   float:left;
-  width:50%;
+  width:100%;
 }
 .marquee-wrapper .marquee-block{
-  --total-marquee-items:5;
+  --total-marquee-items:4;
   height: 600px;
   width: calc(588px * (var(--total-marquee-items)));
   overflow: hidden;
@@ -279,11 +279,11 @@ a:hover:after{
   text-align: center;
 }
 .marquee-item p > c{
-  color: #eb002a;
+  color: #eb0056;
 }
 
 .marquee-inner.to-left{
-  animation: marqueeLeft 25s linear infinite;
+  animation: marqueeLeft 20s linear infinite;
 }
 .marquee-inner.to-right{
   animation: marqueeRight 25s linear infinite;
@@ -296,7 +296,7 @@ a:hover:after{
   float: left;
   transition: all .3s ease-out;
   background:#ececec;
-  border-bottom: orange 5px solid;
+  border-bottom: rgb(187, 212, 253) 5px solid;
   margin-top: 10px;
 }
 @keyframes marqueeLeft{
@@ -304,7 +304,7 @@ a:hover:after{
     left: 0;
   }
   100% {
-    left: -100%;
+    left: -50%;
   }
 }
 @keyframes marqueeRight{

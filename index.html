@@ -59,28 +59,103 @@
 </head>
 <body>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="xtitle is-1 publication-title">
-              <span style="font-weight: 600;color: #eb002a">FreeMask:</span>
-              <span>F</span>using 
-              <span>A</span>ttentions for 
-              <span>Zero-shot</span>
-              <span>T</span>ext-based</span> Video 
-              <span>E</span>diting</h1> 
-            </div>
+  <!-- FreeMask: Rethinking the Importance of Attention Masks \\ for Zero-Shot Video Editing -->
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="xtitle is-1 publication-title">
+            <span style="font-weight: 600;color: rgb(187, 212, 253)">FreeMask:</span>
+            <span>R</span>ethinking the 
+            <span>I</span>mportance of
+            <span>Attention Masks</span><br>
+            <span>for Zero-shot</span> Video 
+            <span>E</span>diting</h1> 
+          <!-- <div class="is-size-5 publication-authors">
+            ICCV 2023 Oral Presentation
+            <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span> -->
+          <!-- </div> -->
+        </br>
+          <div class="is-size-5 publication-authors">
+            <!-- Paper authors -->
+            <span class="author-block">
+              <!-- <a href="https://chenyangqiqi.github.io/" target="_blank">Chenyang Qi</a><sup>1</sup></span>
+              <span class="author-block"> -->
+                <a target="_blank">Lingling Cai</a><sup>1</sup></span>
+                <span class="author-block">
+                  <a href="https://yzhang2016.github.io" target="_blank">Kang Zhao</a><sup>2</sup>
+                </span>
+                <span class="author-block">
+                  <a href="https://chenyanglei.github.io/" target="_blank">Hangjie Yuan</a><sup>1</sup>
+                </span>
+                <span class="author-block">
+                  <a href="https://xinntao.github.io/" target="_blank">Yingya Zhang</a><sup>2</sup>
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?hl=zh-CN&user=4oXBp9UAAAAJ" target="_blank">Shiwei Zhang</a><sup>2</sup>
+                </span>
+                <span class="author-block">
+                  <a href="https://cqf.io/" target="_blank">Kejie Huang</a><sup>1</sup>
+                </span>
+
+                </div>
+              
+            </br>
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block">
+                  <sup>1</sup> Zhejiang University &nbsp;&nbsp;&nbsp;
+                  <sup>2</sup> Alibaba Group &nbsp;&nbsp;&nbsp;
+                  <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span> -->
+                </div>
+
+                <div class="column has-text-centered">
+                  <div class="publication-links">
+                    
+                     <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2303.09535" target="_blank"
+                  class="external-link ">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/ChenyangQiQi/FateZero" target="_blank"
+                  class="external-link ">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+
+              <!-- Github link -->
+              <span class="link-block">
+                <a href="static/videos/FreeMask.mp4" target="_blank"
+                class="external-link ">
+                <span class="icon">
+                  <i class="fab fa-youtube"></i>
+                </span>
+                <span>Video</span>
+              </a>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 </section>
 
 <section class="hero">
-  <p class="trdl">Zero-shot Video Editing Result Summary.</p>
+  <!-- <p class="title is-3">Showcases of FreeMask</p> -->
   <div class="is-max-desktop">
     <div class="marquee-wrapper">
         <div class="marquee-block">
@@ -89,11 +164,11 @@
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
                   <!-- Your video file here -->
-                  <source src="static/videos/"
+                  <source src="static/videos/2_dog_style.mp4"
                   type="video/mp4">
                 sorry, your browser does not support HTML5 Videos.
                 </video>
-                <p class="text-white"> <c> + Van Gogh Style </c> </p>
+                <p class="text-white"> <c>+ Cartoon Style </c> </p>
               </div>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
@@ -101,7 +176,7 @@
                     type="video/mp4">
                   sorry, your browser does not support HTML5 Videos.  
                   </video>
-                <p class="text-white"> <c> + Ukiyo-e Style painting </c> </p>
+                <p class="text-white"> <c> + Van Gogh Style </c> </p>
               </div>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
@@ -109,210 +184,130 @@
                   type="video/mp4">
                 sorry, your browser does not support HTML5 Videos.
                 </video>
+                <p class="text-white"> <c> + Ukiyo-e Style </c> </p>
+              </div>
+              <div class="marquee-item">
+                <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
+                  <source src="static/videos/4_jeep_style.mp4"
+                    type="video/mp4">
+                  sorry, your browser does not support HTML5 Videos.
+                  </video>
                 <p class="text-white"> <c> + Van Gogh Style </c> </p>
               </div>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/8_swan_swa_concat_result.mp4"
+                  <source src="static/videos/7_fox_attribute.mp4"
                     type="video/mp4">
                   sorry, your browser does not support HTML5 Videos.
                   </video>
-                <p class="text-white"> Swan ➜ <c>Swarovski Swan</c> </p>
+                <p class="text-white"> in the grass ➜ <c> in the snow </c> </p>
               </div>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/9_duck_rubber_concat_result.mp4"
+                  <source src="static/videos/8_squirral_attribute.mp4"
                     type="video/mp4">
                   sorry, your browser does not support HTML5 Videos.
                   </video>
-                <p class="text-white">Duck ➜ <c>Rubber Duck</c> </p>
+                <p class="text-white"> carrot ➜ <c> sweet potato </c> </p>
               </div>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/11_dog_robotic_corgin_02_concat_result.mp4"
-                    type="video/mp4">
-                  sorry, your browser does not support HTML5 Videos.
-                  </video>
-                <p class="text-white">Dog ➜ <c> Robotic Dog </c> </p>
+                  <!-- Your video file here -->
+                  <source src="static/videos/2_dog_style.mp4"
+                  type="video/mp4">
+                sorry, your browser does not support HTML5 Videos.
+                </video>
+                <p class="text-white"> <c>+ Cartoon Style </c> </p>
               </div>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/12_fox_snow_wolf_02_concat_result.mp4"
+                  <source src="static/videos/5_parrot_style.mp4"
                     type="video/mp4">
-                  sorry, your browser does not support HTML5 Videos.
+                  sorry, your browser does not support HTML5 Videos.  
                   </video>
-                <p class="text-white"> White Fox ➜ <c> Gray Wolf </c> </p>
+                <p class="text-white"> <c> + Van Gogh Style </c> </p>
               </div>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/14_car_grass_tiger_corgin_02_concat_result.mp4"
+                  <source src="static/videos/4_jeep_style.mp4"
                     type="video/mp4">
                   sorry, your browser does not support HTML5 Videos.
                   </video>
-                <p class="text-white">Cat ➜ <c> Black Cat, Grass </c> </p>
-              </div>
-              <div class="marquee-item">
-                <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/13_bear_tiger_leopard_lion_03_concat_result.mp4"
-                    type="video/mp4">
-                  sorry, your browser does not support HTML5 Videos.
-                  </video>
-                <p class="text-white">Bear ➜ <c> Lion </c> </p>
-              </div>
-              <div class="marquee-item">
-                <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/17_car_posche_01_concat_result.mp4"
-                    type="video/mp4">
-                  sorry, your browser does not support HTML5 Videos.
-                  </video>
-                <p class="text-white">Cat ➜ <c>Posche Car<sup>*</sup></c> </p>
-              </div>
-              <div class="marquee-item">
-                <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/16_sq_eat_03_concat_result.mp4"
-                    type="video/mp4">
-                  sorry, your browser does not support HTML5 Videos.
-                  </video>
-                <p class="text-white">Rabbit ➜ <c>Robot Mouse </c> </p>
-              </div>
-              <div class="marquee-item">
-                <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/19_man_wonder_02_concat_result.mp4"
-                    type="video/mp4">
-                  sorry, your browser does not support HTML5 Videos.
-                  </video>
-                <p class="text-white">Man ➜ <c>Wonder Woman<sup>*</sup></c> </p>
-              </div>
-              <div class="marquee-item">
-                <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/18_swan_01_concat_result.mp4"
-                    type="video/mp4">
-                  sorry, your browser does not support HTML5 Videos.
-                  </video>
-                <p class="text-white">Swan ➜ <c>White Duck</c></p>
-              </div>
-              <div class="marquee-item">
-                <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/10_bus_gpu_01_concat_result.mp4"
-                    type="video/mp4">
-                  sorry, your browser does not support HTML5 Videos.
-                  </video>
-                <p class="text-white">Bus ➜ <c>GPU</c> </p>
+                <p class="text-white"> <c> + Van Gogh Style </c> </p>
               </div>
             </span>
             <span>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <!-- Your video file here -->
-                  <source src="static/videos/"
-                  type="video/mp4">
-                sorry, your browser does not support HTML5 Videos.
-                </video>
-                <p class="text-white"> <c> + Ukiyo-e Style </c> </p>
-              </div>
-              <div class="marquee-item">
-                <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/5_train_shikai_conat_result.mp4"
-                    type="video/mp4">
-                  sorry, your browser does not support HTML5 Videos.  
-                  </video>
-                <p class="text-white"> <c> + Ukiyo-e Style </c> </p>
-              </div>
-              <div class="marquee-item">
-                <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                <source src="static/videos/3_giraffe_style.mp4"
-                  type="video/mp4">
-                sorry, your browser does not support HTML5 Videos.
-                </video>
-                <p class="text-white"> <c> + Van Gogh Style </c> </p>
-              </div>
-              <div class="marquee-item">
-                <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/8_swan_swa_concat_result.mp4"
+                  <source src="static/videos/suirral_darkgrey.mp4"
                     type="video/mp4">
                   sorry, your browser does not support HTML5 Videos.
                   </video>
-                <p class="text-white"> Swan ➜ <c>Swarovski Swan</c> </p>
+                <p class="text-white"> light brown squirral ➜ <c> dark grey</c> </p>
               </div>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/9_duck_rubber_concat_result.mp4"
+                  <source src="static/videos/horse_zebra.mp4"
                     type="video/mp4">
                   sorry, your browser does not support HTML5 Videos.
                   </video>
-                <p class="text-white">Duck ➜ <c>Rubber Duck</c> </p>
+                <p class="text-white"> horse ➜ <c> zebra </c> </p>
               </div>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/11_dog_robotic_corgin_02_concat_result.mp4"
+                  <source src="static/videos/horese_white.mp4"
                     type="video/mp4">
                   sorry, your browser does not support HTML5 Videos.
                   </video>
-                <p class="text-white">Dog ➜ <c> Robotic Dog </c> </p>
+                <p class="text-white"> brown horse ➜ <c> white horse </c> </p>
               </div>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/12_fox_snow_wolf_02_concat_result.mp4"
+                  <source src="static/videos/cat_tiger.mp4"
                     type="video/mp4">
                   sorry, your browser does not support HTML5 Videos.
                   </video>
-                <p class="text-white"> White Fox ➜ <c> Gray Wolf </c> </p>
+                <p class="text-white"> cat ➜ <c> tiger </c> </p>
               </div>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/14_car_grass_tiger_corgin_02_concat_result.mp4"
+                  <source src="static/videos/9_man_shape2.mp4"
                     type="video/mp4">
                   sorry, your browser does not support HTML5 Videos.
                   </video>
-                <p class="text-white">Cat ➜ <c> Black Cat, Grass </c> </p>
+                <p class="text-white"> man ➜ <c> penguin </c> </p>
               </div>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/13_bear_tiger_leopard_lion_03_concat_result.mp4"
+                  <source src="static/videos/girl_boy.mp4"
                     type="video/mp4">
                   sorry, your browser does not support HTML5 Videos.
                   </video>
-                <p class="text-white">Bear ➜ <c> Lion </c> </p>
+                <p class="text-white"> girl ➜ <c> boy </c> </p>
               </div>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/17_car_posche_01_concat_result.mp4"
+                  <source src="static/videos/suirral_darkgrey.mp4"
                     type="video/mp4">
                   sorry, your browser does not support HTML5 Videos.
                   </video>
-                <p class="text-white">Cat ➜ <c>Posche Car<sup>*</sup></c> </p>
+                <p class="text-white"> light brown squirral ➜ <c> dark grey</c> </p>
               </div>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/16_sq_eat_03_concat_result.mp4"
+                  <source src="static/videos/horse_zebra.mp4"
                     type="video/mp4">
                   sorry, your browser does not support HTML5 Videos.
                   </video>
-                <p class="text-white">Rabbit ➜ <c>Robot Mouse </c> </p>
+                <p class="text-white"> horse ➜ <c> zebra </c> </p>
               </div>
               <div class="marquee-item">
                 <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/19_man_wonder_02_concat_result.mp4"
+                  <source src="static/videos/horese_white.mp4"
                     type="video/mp4">
                   sorry, your browser does not support HTML5 Videos.
                   </video>
-                <p class="text-white">Man ➜ <c>Wonder Woman<sup>*</sup></c> </p>
-              </div>
-              <div class="marquee-item">
-                <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/18_swan_01_concat_result.mp4"
-                    type="video/mp4">
-                  sorry, your browser does not support HTML5 Videos.
-                  </video>
-                <p class="text-white">Swan ➜ <c>White Duck</c></p>
-              </div>
-              <div class="marquee-item">
-                <video onloadstart="this.playbackRate = 0.75;" poster="" id="video1" autoplay muted loop playsinline height="100%">
-                  <source src="static/videos/10_bus_gpu_01_concat_result.mp4"
-                    type="video/mp4">
-                  sorry, your browser does not support HTML5 Videos.
-                  </video>
-                <p class="text-white">Bus ➜ <c>GPU</c> </p>
+                <p class="text-white"> brown horse ➜ <c> white horse </c> </p>
               </div>
             </span>
         </div>
@@ -323,20 +318,61 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column">
-        <h2 class="title is-2">Pipeline</h2>
+        <h2 class="title is-2">Method Overview</h2>
         <div class="content has-text-justified">
-          <img src="static/images/pipeline.gif" />
+          <img src="static/images/framework.jpg"  width="100%" height="500px" />
         </div>
         <p class="content has-text-justified">
-         <b>Left, Pipeline</b>: we store all the attention maps in the DDIM inversion pipeline.
-         At the editing stage of the DDIM denoising, we then fuse the attention maps with the stored attention maps using the proposed Attention Blending Block. 
-         <br/><br/><b>Right, Attention Blending Block</b>: First, we replace the cross-attention maps of un-edited words~(e.g., road and countryside) with their maps using the source prompt during inversion. As for the edited words (e.g., posche car), we blend the self-attention maps during inversion and editing with an adaptive spatial mask obtained from cross-attention, which represents the areas that the user wants to edit. 
+         <b>Abstract</b>: Text-to-video diffusion models have made remarkable advancements. Driven by their ability to generate temporally coherent videos, research on zero-shot video editing using these fundamental models has expanded rapidly.
+         To enhance editing quality, structural controls are frequently employed in video editing. Among these techniques, cross-attention mask control stands out for its effectiveness and efficiency.
+         However, when cross-attention masks are naively applied to video editing, they can introduce artifacts such as blurring and flickering.
+         Our experiments uncover a critical factor overlooked in previous video editing research: cross-attention masks are not consistently clear but vary with model structure and denoising timestep. 
+         To address this issue, we propose the metric Mask Matching Cost (MMC) that quantifies this variability and propose \textbf{FreeMask}, a method for selecting optimal masks tailored to specific video editing tasks.
+         Using MMC-selected masks, we further improve the masked fusion mechanism within comprehensive attention features, e.g., temp, cross, and self-attention modules.
+         Our approach can be seamlessly integrated into existing zero-shot video editing frameworks with better performance, requiring no control assistance or parameter fine-tuning but enabling adaptive decoupling of unedited semantic layouts with mask precision control. 
+         Extensive experiments demonstrate that FreeMask achieves superior semantic fidelity, temporal consistency, and editing quality compared to state-of-the-art methods.
         </p>
       </div>
     </div>
   </div>
 </section>
+
+
+<!-- <section class="section hero">
+  <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+          <div class="column">
+              <h2 class="title is-2">Method Overview</h2>
+              <div class="content has-text-justified">
+                  <embed src="static/images/frame0809.pdf" type="application/pdf" width="100%" height="500px" />
+              </div>
+              <p class="content has-text-justified">
+                  <b>Left, Pipeline</b>: we store all the attention maps in the DDIM inversion pipeline.
+                  At the editing stage of the DDIM denoising, we then fuse the attention maps with the stored attention maps using the proposed Attention Blending Block. 
+                  <br/><br/><b>Right, Attention Blending Block</b>: First, we replace the cross-attention maps of un-edited words~(e.g., road and countryside) with their maps using the source prompt during inversion. As for the edited words (e.g., posche car), we blend the self-attention maps during inversion and editing with an adaptive spatial mask obtained from cross-attention, which represents the areas that the user wants to edit. 
+              </p>
+          </div>
+      </div>
+  </div>
+</section> -->
 <!-- End paper abstract -->
+
+<!-- <section class="section hero ">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Summary of Video Editing Results</h2>
+      <div class="marquee-item-long">
+        <video onloadstart="this.playbackRate = 0.75;" poster="" id="video0"  autoplay muted loop playsinline height="100%">
+          <source src="static/videos/FreeMask.mp4"
+            type="video/mp4">
+          sorry, your browser does not support HTML5 Videos.
+          </video>
+      </div>
+  </div>
+</div>
+</div>
+</section> -->
+
 
 <!------------------------ Zero-shot Video Stylization ---------------------------->
 <section class="section hero is-light">
@@ -470,7 +506,7 @@
 </section>
 <!--End BibTex citation -->
 
-
+<!-- 
 <section class="section">
   <div class="hero-body">
     <div class="container is-max-desktop content">
@@ -500,7 +536,7 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 
 <!-- Statcounter tracking code -->
